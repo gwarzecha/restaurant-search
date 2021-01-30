@@ -1,15 +1,55 @@
+/*
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
 * {
   box-sizing: border-box;
 }
 
-#mainImg {
-  border-radius: 50%;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-#toEat, #foundEat {
+main {
+  flex: 1 0 auto;
+}
+
+#brandImg {
+  margin: 5px 0 0 5px;
+}
+
+#mainTitle {
+  margin: 1rem 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#feedMood {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.contHead {
   font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-.row {
-  margin: 15px;
+.btn {
+  font-family: 'Jost', sans-serif;
 }
+
+#content1 {
+  margin: 30px auto 15px auto;
+}
+
+.container {
+  width: 90%;
+}
+
+/*
+#copywrite {
+  margin: 5px 0 25px 15px;
+}
+*/
