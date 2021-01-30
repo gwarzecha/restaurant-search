@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- CSS stylesheet-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>The-Quick-Bite</title>
 </head>
+
 <body>
-  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img src="./assets/imgs/logo.png " style="width:50px;height:50px" /></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light btn">Are You Hungry? <i class="material-icons right">whatshot</i></a>
+        </li>
+        <li><a class="waves-effect waves-light btn">Contact Us <i class="material-icons right">phone_iphone</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- box 1 -->
+    <div class="row">
+      <div class="col s6">
+        <img src="./assets/imgs/logo.png " style="width:50px;height:50px" />
+        <h1>The Quick Bite</h1>
+        <p class="flow-text">We find you delicious food to feed your mood!</p>
+        <!-- dynamically created zipcode button -->
+        <button>Enter Your Zipcode</button>
+      </div>
+      <div class="col s6">
+        <img src="./assets/imgs/pexels-dana-tentis-750075.jpg" style="width:300px;height:300px" id="mainImg" />
+      </div>
+    </div>
+
+    <!-- box 2 -->
+    <div class="row">
+      <div class="col s10">
+        <h2 id="toEat">Tell Us What Looks Good</h2>
+        <div class="row">
+          <!-- will end up being clickable buttons-->
+          <img src="./assets/imgs/tacos.png" />
+          <img src="./assets/imgs/american.png" />
+          <img src="./assets/imgs/pizza.png" />
+          <img src="./assets/imgs/coffee.png" />
+          <img src="./assets/imgs/healthy.png" />
+          <img src="./assets/imgs/japanese.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- box 3 -->
+    <div class="row">
+
+      <h2 id="foundEat">We Found You Something To Eat</h2>
+      <!-- replace with dynamically created restuarant info-->
+
+      <div class="col s4">
+        <div class="card-panel teal">
+          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel
+            in other frameworks.
+          </span>
+        </div>
+      </div>
+
+
+      <div class="col s4">
+        <div class="card-panel teal">
+          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel
+            in other frameworks.
+          </span>
+        </div>
+      </div>
+
+
+      <div class="col s4">
+        <div class="card-panel teal">
+          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel
+            in other frameworks.
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

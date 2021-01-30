@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+#mainImg {
+  border-radius: 50%;
+}
+
+#toEat, #foundEat {
+  font-size: 18px;
+}
+
+.row {
+  margin: 15px;
+}
