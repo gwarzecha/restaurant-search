@@ -57,6 +57,12 @@ main {
   background-color: transparent;
 }
 
+.inputZip {
+  color: #BC1823;
+  font-family: 'Jost', sans-serif;
+  font-size: larger;
+}
+
 /*
 #copywrite {
   margin: 5px 0 25px 15px;
