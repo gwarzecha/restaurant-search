@@ -48,12 +48,13 @@ main {
   width: 90%;
 }
 
-#iconBtn {
+.iconBtn {
   border-radius: 50%;
   border-style: hidden;
+  background-color: white;
 }
 
-#iconBtn:focus {
+.iconBtn:focus {
   background-color: transparent;
 }
 

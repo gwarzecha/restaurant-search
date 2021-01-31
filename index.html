@@ -45,10 +45,10 @@
         <a href="#!" class="brand-logo"><img src="./assets/imgs/logo.png " style="width:50px;height:50px"
             id="brandImg" /></a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="waves-effect waves-light btn red accent-4">Are You Hungry? <i
+          <li><a href="#feedMood" class="waves-effect waves-light btn red accent-4">Are You Hungry? <i
                 class="material-icons right">local_dining</i></a>
           </li>
-          <li><a class="waves-effect waves-light btn red accent-4">Contact Us <i
+          <li><a href="#contact" class="waves-effect waves-light btn red accent-4">Contact Us <i
                 class="material-icons right">phone_iphone</i></a></li>
         </ul>
       </div>
@@ -65,7 +65,8 @@
           <h1 id="mainTitle">The Quick Bite</h1>
           <p class="flow-text" id="feedMood">We find you delicious food to feed your mood!</p>
           <!-- dynamically created zipcode button -->
-          <Label class="inputZip">Enter Your Zipcode</Label><input type="text" pattern="[0-9]{5}" title="Five digit zip code" />
+          <label class="inputZip">Enter Your Zipcode</label><input type="text" pattern="[0-9]{5}"
+            title="Five digit zip code" />
           <!--<button class="btn waves-effect waves-light red accent-4">Enter Your Zipcode</button>-->
         </div>
         <div class="col l6">
@@ -80,12 +81,18 @@
           <h2 class="contHead">Tell Us What Looks Good</h2>
           <div class="row">
             <!-- will end up being clickable buttons-->
-            <button class="waves-effect waves-light" id="iconBtn"><img src="./assets/imgs/tacos.png" /></button>
-            <button class="waves-effect waves-light" id="iconBtn"><img src="./assets/imgs/american.png" /></button>
-            <button class="waves-effect waves-light" id="iconBtn"><img src="./assets/imgs/pizza.png" /></button>
-            <button class="waves-effect waves-light" id="iconBtn"><img src="./assets/imgs/coffee.png" /></button>
-            <button class="waves-effect waves-light" id="iconBtn"><img src="./assets/imgs/healthy.png" /></button>
-            <button class="waves-effect waves-light" id="iconBtn"><img src="./assets/imgs/japanese.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnT"><img
+                src="./assets/imgs/tacos.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnA"><img
+                src="./assets/imgs/american.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnP"><img
+                src="./assets/imgs/pizza.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnC"><img
+                src="./assets/imgs/coffee.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnH"><img
+                src="./assets/imgs/healthy.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnJ"><img
+                src="./assets/imgs/japanese.png" /></button>
           </div>
         </div>
       </div>
@@ -108,7 +115,7 @@
     </div>
   </main>
 
-  <footer class="page-footer grey lighten-2">
+  <footer class="page-footer grey lighten-2" id="contact">
 
     <div class="footer-copyright grey lighten-2">
       <div class="container">
