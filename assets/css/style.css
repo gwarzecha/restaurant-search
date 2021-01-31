@@ -48,6 +48,15 @@ main {
   width: 90%;
 }
 
+#iconBtn {
+  border-radius: 50%;
+  border-style: hidden;
+}
+
+#iconBtn:focus {
+  background-color: transparent;
+}
+
 /*
 #copywrite {
   margin: 5px 0 25px 15px;
