@@ -31,6 +31,8 @@ main {
   font-family: 'Fira Sans', sans-serif;
 }
 
+
+
 .contHead {
   font-size: 18px;
   font-family: 'Fira Sans', sans-serif;
@@ -58,7 +60,7 @@ main {
   background-color: transparent;
 }
 
-.inputZip {
+.inputCity {
   color: #BC1823;
   font-family: 'Jost', sans-serif;
   font-size: larger;

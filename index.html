@@ -65,9 +65,13 @@
           <h1 id="mainTitle">The Quick Bite</h1>
           <p class="flow-text" id="feedMood">We find you delicious food to feed your mood!</p>
           <!-- dynamically created zipcode button -->
-          <label class="inputZip">Enter Your Zipcode</label><input type="text" pattern="[0-9]{5}"
-            title="Five digit zip code" />
-          <!--<button class="btn waves-effect waves-light red accent-4">Enter Your Zipcode</button>-->
+          <div class="searchField">
+            <label class="inputCity" for="citySearch">Enter Your City</label>
+            <input id="searchInput" type="text" name="citySearch" />
+            
+            <button type="submit" class="btn waves-effect waves-light red accent-4" id="submitBtn">Submit</button>
+          </div>
+
         </div>
         <div class="col l6">
           <img src="./assets/imgs/burger.jpg" id="mainImg" class="responsive-img circle hide-on-med-and-down" />
@@ -81,7 +85,7 @@
           <h2 class="contHead">Tell Us What Looks Good</h2>
           <div class="row">
             <!-- will end up being clickable buttons-->
-            <button class="waves-effect waves-light iconBtn" id="iconBtnT"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnM"><img
                 src="./assets/imgs/tacos.png" /></button>
             <button class="waves-effect waves-light iconBtn" id="iconBtnA"><img
                 src="./assets/imgs/american.png" /></button>
