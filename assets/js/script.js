@@ -15,9 +15,6 @@
 
 
 
-// Choose random 5 or so restaurants from the array that is returned from the function
-// plugging the city id into the particular restaurant fetch request.
-// Populate these results into cards on the carousel.
 // Add some kind of img functionality using the img API
 // Try and make the code more DRY as it is incredibly redundant. 
 
@@ -31,7 +28,7 @@ fetchLocation.addEventListener("click", function () {
   console.log("clicked");
   // city name entered within the search field
   var cityName = document.querySelector("#searchInput").value;
-  console.log(cityName);
+  //console.log(cityName);
 
   // fetch call to retrieve city data from zomato 
   var myHeaders = new Headers();
@@ -51,7 +48,8 @@ fetchLocation.addEventListener("click", function () {
       console.log(response);
       // fetches the city id for the first city in the area (which is typically the one searched for)
       var fetchedId = response.location_suggestions[0].id;
-      console.log(fetchedId);
+      //console.log(fetchedId);
+
 
       // icon food-type buttons
       var buttonM = document.querySelector("#iconBtnM");
@@ -74,13 +72,41 @@ fetchLocation.addEventListener("click", function () {
           })
           .then(function (response) {
             console.log(response);
+
+            var list = response.restaurants;
+            //console.log(list);
+
+            $("#restaurantContainer").html("");
+
+            for (var i = 0; i < 5; i++) {
+              console.log(list[i]);
+              if (list[i].restaurant.featured_image.length > 0) {
+                var restaurantCard = //offset-s3 in class
+                `<div class="col s3 card large card-image"> 
+                  <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
+                  <span class="card-title">${list[i].restaurant.name}<span>
+                  <div class="card-content>
+                    <p class="rating">${list[i].restaurant.price_range}</p>
+                    <p class="address">${list[i].restaurant.location.address}</p>
+                    <p class="hours">${list[i].restaurant.timings}</p>
+                  </div>
+                </div>`
+                //console.log(restaurantCard);
+
+                $("#restaurantContainer").append(restaurantCard);
+              }
+
+
+            }
           })
+
+
 
       });
 
       var buttonA = document.querySelector("#iconBtnA");
       buttonA.addEventListener("click", function () {
-        console.log("clicked");
+        //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
         var myHeaders = new Headers();
@@ -98,12 +124,36 @@ fetchLocation.addEventListener("click", function () {
           })
           .then(function (response) {
             console.log(response);
+
+            var list = response.restaurants;
+            //console.log(list);
+
+            $("#restaurantContainer").html("");
+
+            for (var i = 0; i < 5; i++) {
+              console.log(list[i]);
+              if (list[i].restaurant.featured_image.length > 0) {
+                var restaurantCard = //offset-s3 in class
+                `<div class="col s3 card large card-image"> 
+                  <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
+                  <span class="card-title">${list[i].restaurant.name}<span>
+                  <div class="card-content>
+                    <p class="rating">${list[i].restaurant.price_range}</p>
+                    <p class="address">${list[i].restaurant.location.address}</p>
+                    <p class="hours">${list[i].restaurant.timings}</p>
+                  </div>
+                </div>`
+                //console.log(restaurantCard);
+
+                $("#restaurantContainer").append(restaurantCard);
+              }
+            }
           })
       });
 
       var buttonP = document.querySelector("#iconBtnP");
       buttonP.addEventListener("click", function () {
-        console.log("clicked");
+        //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
         var myHeaders = new Headers();
@@ -121,13 +171,36 @@ fetchLocation.addEventListener("click", function () {
           })
           .then(function (response) {
             console.log(response);
-          })
 
+            var list = response.restaurants;
+            //console.log(list);
+
+            $("#restaurantContainer").html("");
+
+            for (var i = 0; i < 5; i++) {
+              console.log(list[i]);
+              if (list[i].restaurant.featured_image.length > 0) {
+                var restaurantCard = //offset-s3 in class
+                `<div class="col s3 card large card-image"> 
+                  <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
+                  <span class="card-title">${list[i].restaurant.name}<span>
+                  <div class="card-content>
+                    <p class="rating">${list[i].restaurant.price_range}</p>
+                    <p class="address">${list[i].restaurant.location.address}</p>
+                    <p class="hours">${list[i].restaurant.timings}</p>
+                  </div>
+                </div>`
+                //console.log(restaurantCard);
+
+                $("#restaurantContainer").append(restaurantCard);
+              }
+            }
+          })
       });
 
       var buttonC = document.querySelector("#iconBtnC");
       buttonC.addEventListener("click", function () {
-        console.log("clicked");
+        //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
         var myHeaders = new Headers();
@@ -145,13 +218,36 @@ fetchLocation.addEventListener("click", function () {
           })
           .then(function (response) {
             console.log(response);
-          })
 
+            var list = response.restaurants;
+            //console.log(list);
+
+            $("#restaurantContainer").html("");
+
+            for (var i = 0; i < 5; i++) {
+              console.log(list[i]);
+              if (list[i].restaurant.featured_image.length > 0) {
+                var restaurantCard = //offset-s3 in class
+                `<div class="col s3 card large card-image"> 
+                  <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
+                  <span class="card-title">${list[i].restaurant.name}<span>
+                  <div class="card-content>
+                    <p class="rating">${list[i].restaurant.price_range}</p>
+                    <p class="address">${list[i].restaurant.location.address}</p>
+                    <p class="hours">${list[i].restaurant.timings}</p>
+                  </div>
+                </div>`
+                //console.log(restaurantCard);
+
+                $("#restaurantContainer").append(restaurantCard);
+              }
+            }
+          })
       });
 
       var buttonH = document.querySelector("#iconBtnH");
       buttonH.addEventListener("click", function () {
-        console.log("clicked");
+        //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
         var myHeaders = new Headers();
@@ -169,12 +265,36 @@ fetchLocation.addEventListener("click", function () {
           })
           .then(function (response) {
             console.log(response);
+
+            var list = response.restaurants;
+            //console.log(list);
+
+            $("#restaurantContainer").html("");
+
+            for (var i = 0; i < 5; i++) {
+              console.log(list[i]);
+              if (list[i].restaurant.featured_image.length > 0) {
+                var restaurantCard = //offset-s3 in class
+                `<div class="col s3 card large card-image"> 
+                  <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
+                  <span class="card-title">${list[i].restaurant.name}<span>
+                  <div class="card-content>
+                    <p class="rating">${list[i].restaurant.price_range}</p>
+                    <p class="address">${list[i].restaurant.location.address}</p>
+                    <p class="hours">${list[i].restaurant.timings}</p>
+                  </div>
+                </div>`
+                //console.log(restaurantCard);
+
+                $("#restaurantContainer").append(restaurantCard);
+              }
+            }
           })
       });
 
       var buttonJ = document.querySelector("#iconBtnJ");
       buttonJ.addEventListener("click", function () {
-        console.log("clicked");
+        //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
         var myHeaders = new Headers();
@@ -186,18 +306,39 @@ fetchLocation.addEventListener("click", function () {
 
         fetch("https://developers.zomato.com/api/v2.1/search?entity_id=" +
           fetchedId +
-          "&entity_type=city&cuisines=25", requestOptions)
+          "&entity_type=city&cuisines=3", requestOptions)
           .then(function (response) {
             return response.json();
           })
           .then(function (response) {
             console.log(response);
+
+            var list = response.restaurants;
+            //console.log(list);
+
+            $("#restaurantContainer").html("");
+
+            for (var i = 0; i < 5; i++) {
+              console.log(list[i]);
+              if (list[i].restaurant.featured_image.length > 0) {
+                var restaurantCard = //offset-s3 in class
+                  `<div class="col s3 card large card-image"> 
+                    <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
+                    <span class="card-title">${list[i].restaurant.name}<span>
+                    <div class="card-content>
+                      <p class="rating">${list[i].restaurant.price_range}</p>
+                      <p class="address">${list[i].restaurant.location.address}</p>
+                      <p class="hours">${list[i].restaurant.timings}</p>
+                    </div>
+                  </div>`
+                  //console.log(restaurantCard);
+
+                $("#restaurantContainer").append(restaurantCard);
+              }
+            }
           })
       });
-
-
     })
-
 });
 
 

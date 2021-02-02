@@ -66,6 +66,30 @@ main {
   font-size: larger;
 }
 
+.foodImg {
+  width: 100%;
+}
+
+.card {
+  margin: 5px;
+}
+
+.row .col {
+  padding: 0;
+}
+
+.card-content {
+  padding: 10rem;
+}
+
+.card-title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+}
+
+.card .card-title {
+  padding: 10px;
+}
 /*
 #copywrite {
   margin: 5px 0 25px 15px;
