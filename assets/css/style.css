@@ -52,14 +52,40 @@ main {
   font-family: 'Fira Sans', sans-serif;
 }
 
-.iconBtn {
+/*.iconBtn {
   border-radius: 50%;
   border-style: hidden;
   background-color: white;
+
+}*/
+
+.iconBtn {
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 2px 15px 0 #bc1823
 }
 
 .iconBtn:focus {
-  background-color: transparent;
+  outline: none;
+}
+
+.iconBtn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .inputCity {
