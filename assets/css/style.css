@@ -115,7 +115,7 @@ main {
   font-family: 'Raleway', sans-serif;
   margin: 10px;
   padding: 10px;
-  display: inline-block
+  display: inline-block;
 }
 
 .card-content {
