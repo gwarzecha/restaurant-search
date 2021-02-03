@@ -1,0 +1,97 @@
+/*
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#brandImg {
+  margin: 5px 0 0 5px;
+}
+
+#mainTitle {
+  margin: 1rem 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#feedMood {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+.contHead {
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.btn {
+  font-family: 'Jost', sans-serif;
+}
+
+#content1 {
+  margin: 30px auto 15px auto;
+}
+
+.container {
+  width: 90%;
+}
+
+.iconBtn {
+  border-radius: 50%;
+  border-style: hidden;
+  background-color: white;
+}
+
+.iconBtn:focus {
+  background-color: transparent;
+}
+
+.inputCity {
+  color: #BC1823;
+  font-family: 'Jost', sans-serif;
+  font-size: larger;
+}
+
+.foodImg {
+  width: 100%;
+}
+
+.card {
+  margin: 5px;
+}
+
+.row .col {
+  padding: 0;
+}
+
+.card-content {
+  padding: 10rem;
+}
+
+.card-title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+}
+
+.card .card-title {
+  padding: 10px;
+}
+/*
+#copywrite {
+  margin: 5px 0 25px 15px;
+}
+*/

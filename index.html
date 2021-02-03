@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Jost:wght@200&family=Raleway:wght@800&display=swap"
+    rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- CSS stylesheet-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>The-Quick-Bite</title>
+</head>
+
+<body>
+  <main>
+    <!--
+    <nav>
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+          </div>
+          <a href="#user"><img class="circle" src="./assets/imgs/logo.png"></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+      
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </nav>
+    -->
+
+
+    <nav>
+      <div class="nav-wrapper grey lighten-2 ">
+        <a href="#!" class="brand-logo"><img src="./assets/imgs/logo.png " style="width:50px;height:50px"
+            id="brandImg" /></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#feedMood" class="waves-effect waves-light btn red accent-4">Are You Hungry? <i
+                class="material-icons right">local_dining</i></a>
+          </li>
+          <li><a href="#contact" class="waves-effect waves-light btn red accent-4">Contact Us <i
+                class="material-icons right">phone_iphone</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <div class="container">
+      <!-- box 1 -->
+      <div class="row" id="content1">
+        <div class="col l6 m12 s12">
+          <img src="./assets/imgs/logo.png " style="width:50px;height:50px" class="responsive-img" />
+          <h1 id="mainTitle">The Quick Bite</h1>
+          <p class="flow-text" id="feedMood">We find you delicious food to feed your mood!</p>
+          <!-- dynamically created zipcode button -->
+          <div class="searchField">
+            <label class="inputCity" for="citySearch">Enter Your City</label>
+            <input id="searchInput" type="text" name="citySearch" />
+            
+            <button type="submit" class="btn waves-effect waves-light red accent-4" id="submitBtn">Submit</button>
+          </div>
+
+        </div>
+        <div class="col l6">
+          <img src="./assets/imgs/burger.jpg" id="mainImg" class="responsive-img circle hide-on-med-and-down" />
+        </div>
+      </div>
+
+      <!-- box 2 -->
+      <div class="row" id="content2">
+        <div class="divider"></div>
+        <div class="col s10">
+          <h2 class="contHead">Tell Us What Looks Good</h2>
+          <div class="row">
+            <!-- will end up being clickable buttons-->
+            <button class="waves-effect waves-light iconBtn" id="iconBtnM"><img
+                src="./assets/imgs/tacos.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnA"><img
+                src="./assets/imgs/american.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnP"><img
+                src="./assets/imgs/pizza.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnC"><img
+                src="./assets/imgs/coffee.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnH"><img
+                src="./assets/imgs/healthy.png" /></button>
+            <button class="waves-effect waves-light iconBtn" id="iconBtnJ"><img
+                src="./assets/imgs/japanese.png" /></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- box 3 -->
+      <div class="row" id="content3">
+        <div class="divider"></div>
+        <h2 class="contHead">We Found You Something To Eat</h2>
+        <!-- replace with dynamically created restuarant info-->
+        <div class="row" id="restaurantContainer">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer grey lighten-2" id="contact">
+
+    <div class="footer-copyright grey lighten-2">
+      <div class="container">
+        © 2014 Copyright Text
+
+      </div>
+    </div>
+
+
+    <!--<div class="right">
+      
+      <i class="material-icons">phone</i>
+      <span>555 555 5555</span>
+      
+    </div>  
+    -->
+
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!-- js script file -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+
+
+
+</html>
