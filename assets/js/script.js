@@ -90,20 +90,21 @@ var getMeFood = function () {
 
               $("#restaurantContainer").html("");
 
-              for (var i = 0; i < 5; i++) {
+              for (var i = 0; i < 15; i++) {
                 console.log(list[i]);
                 if (list[i].restaurant.featured_image.length > 0) {
                   var restaurantCard = //offset-s3 in class
                   `<div class="col s3 card large card-image"> 
                     <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                    <span class="card-title">${list[i].restaurant.name}<span>
-                    <div class="card-content>
-                      <p class="rating">${list[i].restaurant.price_range}</p>
+                    <span class="card-title">${list[i].restaurant.name}</span>
+                    <div class="card-content">
                       <p class="address">${list[i].restaurant.location.address}</p>
+                      <hr>
                       <p class="hours">${list[i].restaurant.timings}</p>
                     </div>
                   </div>`
                   //console.log(restaurantCard);
+                  //<p class="rating">${list[i].restaurant.price_range}</p>
 
                   $("#restaurantContainer").append(restaurantCard);
                 }
@@ -137,20 +138,21 @@ var getMeFood = function () {
 
               $("#restaurantContainer").html("");
 
-              for (var i = 0; i < 5; i++) {
+              for (var i = 0; i < 15; i++) {
                 console.log(list[i]);
                 if (list[i].restaurant.featured_image.length > 0) {
                   var restaurantCard = //offset-s3 in class
                   `<div class="col s3 card large card-image"> 
                     <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                    <span class="card-title">${list[i].restaurant.name}<span>
-                    <div class="card-content>
-                      <p class="rating">${list[i].restaurant.price_range}</p>
+                    <span class="card-title">${list[i].restaurant.name}</span>
+                    <div class="card-content">
                       <p class="address">${list[i].restaurant.location.address}</p>
+                      <hr>
                       <p class="hours">${list[i].restaurant.timings}</p>
                     </div>
                   </div>`
                   //console.log(restaurantCard);
+                  //<p class="rating">${list[i].restaurant.price_range}</p>
 
                   $("#restaurantContainer").append(restaurantCard);
                 }
@@ -184,20 +186,21 @@ var getMeFood = function () {
 
               $("#restaurantContainer").html("");
 
-              for (var i = 0; i < 5; i++) {
+              for (var i = 0; i < 15; i++) {
                 console.log(list[i]);
                 if (list[i].restaurant.featured_image.length > 0) {
                   var restaurantCard = //offset-s3 in class
                   `<div class="col s3 card large card-image"> 
                     <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                    <span class="card-title">${list[i].restaurant.name}<span>
-                    <div class="card-content>
-                      <p class="rating">${list[i].restaurant.price_range}</p>
+                    <span class="card-title">${list[i].restaurant.name}</span>
+                    <div class="card-content">
                       <p class="address">${list[i].restaurant.location.address}</p>
+                      <hr>
                       <p class="hours">${list[i].restaurant.timings}</p>
                     </div>
                   </div>`
                   //console.log(restaurantCard);
+                  //<p class="rating">${list[i].restaurant.price_range}</p>
 
                   $("#restaurantContainer").append(restaurantCard);
                 }
@@ -231,20 +234,21 @@ var getMeFood = function () {
 
               $("#restaurantContainer").html("");
 
-              for (var i = 0; i < 5; i++) {
+              for (var i = 0; i < 15; i++) {
                 console.log(list[i]);
                 if (list[i].restaurant.featured_image.length > 0) {
                   var restaurantCard = //offset-s3 in class
                   `<div class="col s3 card large card-image"> 
                     <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                    <span class="card-title">${list[i].restaurant.name}<span>
-                    <div class="card-content>
-                      <p class="rating">${list[i].restaurant.price_range}</p>
+                    <span class="card-title">${list[i].restaurant.name}</span>
+                    <div class="card-content">
                       <p class="address">${list[i].restaurant.location.address}</p>
+                      <hr>
                       <p class="hours">${list[i].restaurant.timings}</p>
                     </div>
                   </div>`
                   //console.log(restaurantCard);
+                  //<p class="rating">${list[i].restaurant.price_range}</p>
 
                   $("#restaurantContainer").append(restaurantCard);
                 }
@@ -278,20 +282,21 @@ var getMeFood = function () {
 
               $("#restaurantContainer").html("");
 
-              for (var i = 0; i < 5; i++) {
+              for (var i = 0; i < 15; i++) {
                 console.log(list[i]);
                 if (list[i].restaurant.featured_image.length > 0) {
                   var restaurantCard = //offset-s3 in class
                   `<div class="col s3 card large card-image"> 
                     <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                    <span class="card-title">${list[i].restaurant.name}<span>
-                    <div class="card-content>
-                      <p class="rating">${list[i].restaurant.price_range}</p>
+                    <span class="card-title">${list[i].restaurant.name}</span>
+                    <div class="card-content">
                       <p class="address">${list[i].restaurant.location.address}</p>
+                      <hr>
                       <p class="hours">${list[i].restaurant.timings}</p>
                     </div>
                   </div>`
-                  //console.log(restaurantCard);
+                  //console.log(restaurantCard); 
+                  //<p class="rating">${list[i].restaurant.price_range}</p>
 
                   $("#restaurantContainer").append(restaurantCard);
                 }
@@ -325,20 +330,21 @@ var getMeFood = function () {
 
               $("#restaurantContainer").html("");
 
-              for (var i = 0; i < 5; i++) {
+              for (var i = 0; i < 15; i++) {
                 console.log(list[i]);
                 if (list[i].restaurant.featured_image.length > 0) {
                   var restaurantCard = //offset-s3 in class
                     `<div class="col s3 card large card-image"> 
                       <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                      <span class="card-title">${list[i].restaurant.name}<span>
-                      <div class="card-content>
-                        <p class="rating">${list[i].restaurant.price_range}</p>
+                      <span class="card-title">${list[i].restaurant.name}</span>
+                      <div class="card-content">
                         <p class="address">${list[i].restaurant.location.address}</p>
+                        <hr>
                         <p class="hours">${list[i].restaurant.timings}</p>
                       </div>
                     </div>`
                     //console.log(restaurantCard);
+                    //<p class="rating">${list[i].restaurant.price_range}</p>
 
                   $("#restaurantContainer").append(restaurantCard);
                 }
