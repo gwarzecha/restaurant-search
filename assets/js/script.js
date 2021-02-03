@@ -4,14 +4,49 @@
 //var imgApiKey = "20053445-7c1ada4a51a5744095df38f1d";
 
 
-//requestedImg = "pizza";
+//requestedImg = "food";
 
-// api search syntax for pixabay imgs
+//api search syntax for pixabay imgs
 //var imgApiUrl = "https://pixabay.com/api/?q=" +
 //requestedImg +
 //"&image_type=photo&key=" +
 //imgApiKey;
 //console.log(imgApiUrl);
+
+
+//pexels API info
+//var pexelsApiKey = "563492ad6f91700001000001aa957735b0244456a7108662035e3142";
+
+
+
+// unsplash API code for second API requirement implementation
+var unsplashKey = "Yu5LO39b5xy7jlpbWPmFIupILbHp_QF2Z8qFEukAaGc";
+
+var unsplashUrl = "https://api.unsplash.com/search/?client_id=" +
+unsplashKey +
+"&collections&page=1&query=plated_food";
+console.log(unsplashUrl);
+
+fetch(unsplashUrl)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (response) {
+    console.log(response);
+
+    var fetchedPhotos = response.photos.results[0];
+    console.log(fetchedPhotos);
+
+    var photoInput = `<img class="mainImg responsive-img circle hide-on-med-and-down" src="${fetchedPhotos.urls.small}"/>`
+
+    $("#mainPhoto").append(photoInput);
+  });
+  
+  
+
+ 
+
+
 
 
 
@@ -25,6 +60,10 @@ var fetchLocation = document.querySelector("#submitBtn");
 
 
 //FUNCTIONS
+
+
+
+// get last searched city from local storage and plug it into the search function
 window.onload = function() {
   recentSearch = localStorage.getItem("city");
   console.log(recentSearch);
@@ -96,8 +135,8 @@ var getMeFood = function () {
                   var restaurantCard = //offset-s3 in class
                   `<div class="col s3 card large card-image"> 
                     <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                    <span class="card-title">${list[i].restaurant.name}<span>
-                    <div class="card-content>
+                    <span class="card-title">${list[i].restaurant.name}</span>
+                    <div class="card-content">
                       <p class="rating">${list[i].restaurant.price_range}</p>
                       <p class="address">${list[i].restaurant.location.address}</p>
                       <p class="hours">${list[i].restaurant.timings}</p>
@@ -331,8 +370,8 @@ var getMeFood = function () {
                   var restaurantCard = //offset-s3 in class
                     `<div class="col s3 card large card-image"> 
                       <img class="foodImg" src="${list[i].restaurant.featured_image}"/>
-                      <span class="card-title">${list[i].restaurant.name}<span>
-                      <div class="card-content>
+                      <span class="card-title">${list[i].restaurant.name}</span>
+                      <div class="card-content">
                         <p class="rating">${list[i].restaurant.price_range}</p>
                         <p class="address">${list[i].restaurant.location.address}</p>
                         <p class="hours">${list[i].restaurant.timings}</p>

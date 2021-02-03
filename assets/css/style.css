@@ -31,6 +31,29 @@ main {
   font-family: 'Fira Sans', sans-serif;
 }
 
+/*
+code for rendering the ovals into circles but doesn't quite do it yet
+.mainImg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+*/
+
 
 
 .contHead {
