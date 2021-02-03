@@ -12,6 +12,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background: rgb(188,24,35);
+  background: linear-gradient(270deg, rgba(188,24,35,1) 0%, rgba(255,255,255,0.47522759103641454) 50%);
 }
 
 main {
@@ -32,7 +34,6 @@ main {
 }
 
 
-
 .contHead {
   font-size: 18px;
   font-family: 'Fira Sans', sans-serif;
@@ -48,6 +49,7 @@ main {
 
 .container {
   width: 90%;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .iconBtn {
