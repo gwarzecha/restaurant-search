@@ -36,11 +36,14 @@ window.onload = function() {
 
 
 
-fetchLocation.addEventListener("click", function () {
+fetchLocation.addEventListener("click", function (event) {
+  event.preventDefault();
   //console.log("clicked");
   // city name entered within the search field
   var cityName = document.querySelector("#searchInput").value;
   //console.log(cityName);
+
+  $("#restaurantContainer").html("");
 
   localStorage.setItem("city", cityName);
 
@@ -67,7 +70,8 @@ fetchLocation.addEventListener("click", function () {
 
       // icon food-type buttons
       var buttonM = document.querySelector("#iconBtnM");
-      buttonM.addEventListener("click", function () {
+      buttonM.addEventListener("click", function (event) {
+        event.preventDefault();
         console.log("clicked");
 
         // all of the below are fetch calls to retrieve cuisine/restuarant data from zomato 
@@ -92,7 +96,7 @@ fetchLocation.addEventListener("click", function () {
 
             $("#restaurantContainer").html("");
 
-            for (var i = 0; i < 15; i++) {
+            for (var i = 0; i < 5; i++) {
               console.log(list[i]);
               if (list[i].restaurant.featured_image.length > 0) {
                 var restaurantCard = //offset-s3 in class
@@ -115,7 +119,8 @@ fetchLocation.addEventListener("click", function () {
       });
 
       var buttonA = document.querySelector("#iconBtnA");
-      buttonA.addEventListener("click", function () {
+      buttonA.addEventListener("click", function (event) {
+        event.preventDefault();
         //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
@@ -140,7 +145,7 @@ fetchLocation.addEventListener("click", function () {
 
             $("#restaurantContainer").html("");
 
-            for (var i = 0; i < 15; i++) {
+            for (var i = 0; i < 5; i++) {
               console.log(list[i]);
               if (list[i].restaurant.featured_image.length > 0) {
                 var restaurantCard = //offset-s3 in class
@@ -163,7 +168,8 @@ fetchLocation.addEventListener("click", function () {
       });
 
       var buttonP = document.querySelector("#iconBtnP");
-      buttonP.addEventListener("click", function () {
+      buttonP.addEventListener("click", function (event) {
+        event.preventDefault();
         //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
@@ -188,7 +194,7 @@ fetchLocation.addEventListener("click", function () {
 
             $("#restaurantContainer").html("");
 
-            for (var i = 0; i < 15; i++) {
+            for (var i = 0; i < 5; i++) {
               console.log(list[i]);
               if (list[i].restaurant.featured_image.length > 0) {
                 var restaurantCard = //offset-s3 in class
@@ -211,7 +217,8 @@ fetchLocation.addEventListener("click", function () {
       });
 
       var buttonC = document.querySelector("#iconBtnC");
-      buttonC.addEventListener("click", function () {
+      buttonC.addEventListener("click", function (event) {
+        event.preventDefault();
         //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
@@ -236,7 +243,7 @@ fetchLocation.addEventListener("click", function () {
 
             $("#restaurantContainer").html("");
 
-            for (var i = 0; i < 15; i++) {
+            for (var i = 0; i < 5; i++) {
               console.log(list[i]);
               if (list[i].restaurant.featured_image.length > 0) {
                 var restaurantCard = //offset-s3 in class
@@ -259,7 +266,8 @@ fetchLocation.addEventListener("click", function () {
       });
 
       var buttonH = document.querySelector("#iconBtnH");
-      buttonH.addEventListener("click", function () {
+      buttonH.addEventListener("click", function (event) {
+        event.preventDefault();
         //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
@@ -284,7 +292,7 @@ fetchLocation.addEventListener("click", function () {
 
             $("#restaurantContainer").html("");
 
-            for (var i = 0; i < 15; i++) {
+            for (var i = 0; i < 5; i++) {
               console.log(list[i]);
               if (list[i].restaurant.featured_image.length > 0) {
                 var restaurantCard = //offset-s3 in class
@@ -307,7 +315,8 @@ fetchLocation.addEventListener("click", function () {
       });
 
       var buttonJ = document.querySelector("#iconBtnJ");
-      buttonJ.addEventListener("click", function () {
+      buttonJ.addEventListener("click", function (event) {
+        event.preventDefault();
         //console.log("clicked");
 
         // fetch call to retrieve data from zomato 
@@ -332,7 +341,7 @@ fetchLocation.addEventListener("click", function () {
 
             $("#restaurantContainer").html("");
 
-            for (var i = 0; i < 15; i++) {
+            for (var i = 0; i < 5; i++) {
               console.log(list[i]);
               if (list[i].restaurant.featured_image.length > 0) {
                 var restaurantCard = //offset-s3 in class
