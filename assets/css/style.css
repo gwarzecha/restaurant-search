@@ -133,3 +133,13 @@ main {
   margin: 5px 0 25px 15px;
 }
 */
+
+.page-footer {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 5px;
+}
+
+.copyright-info {
+  font-weight: bold;
+}
