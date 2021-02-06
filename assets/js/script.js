@@ -1,15 +1,11 @@
 
-//https://pixabay.com/api/?key=20053445-7c1ada4a51a5744095df38f1d&q=chinese+food&image_type=photo
 
-
-
-
-
-// Add some kind of img functionality using the img API
 // Try and make the code more DRY as it is incredibly redundant. 
 
 //GLOBAL VARIABLES
 var zomatoApiKey = "67e6c9cf18ec88d51590db6c7bb32edc";
+
+var imgApiKey = "20053445-7c1ada4a51a5744095df38f1d";
 
 var fetchLocation = document.querySelector("#submitBtn");
 
@@ -24,32 +20,6 @@ window.onload = function() {
 };
 */
 
-// unsplash API code for second API requirement implementation
-/*
-var unsplashKey = "Yu5LO39b5xy7jlpbWPmFIupILbHp_QF2Z8qFEukAaGc";
-
-var unsplashUrl = "https://api.unsplash.com/search/?client_id=" +
-unsplashKey +
-"&collections&page=1&query=plated_food";
-console.log(unsplashUrl);
-
-fetch(unsplashUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (response) {
-    console.log(response);
-
-    var fetchedPhotos = response.photos.results[0];
-    console.log(fetchedPhotos);
-
-    var photoInput = `<img class="mainImg responsive-img circle hide-on-med-and-down" src="${fetchedPhotos.urls.small}"/>`
-
-    $("#mainPhoto").append(photoInput);
-  });
-  */
-
- var imgApiKey = "20053445-7c1ada4a51a5744095df38f1d";
 
 
  //api search syntax for pixabay imgs
@@ -81,6 +51,7 @@ fetch(unsplashUrl)
   });
 
 
+// function to enter city and subsequent cuisine buttons
 fetchLocation.addEventListener("click", function (event) {
   event.preventDefault();
   //console.log("clicked");
