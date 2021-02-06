@@ -1,17 +1,7 @@
 
 //https://pixabay.com/api/?key=20053445-7c1ada4a51a5744095df38f1d&q=chinese+food&image_type=photo
 
-//var imgApiKey = "20053445-7c1ada4a51a5744095df38f1d";
 
-
-//requestedImg = "pizza";
-
-// api search syntax for pixabay imgs
-//var imgApiUrl = "https://pixabay.com/api/?q=" +
-//requestedImg +
-//"&image_type=photo&key=" +
-//imgApiKey;
-//console.log(imgApiUrl);
 
 
 
@@ -34,6 +24,61 @@ window.onload = function() {
 };
 */
 
+// unsplash API code for second API requirement implementation
+/*
+var unsplashKey = "Yu5LO39b5xy7jlpbWPmFIupILbHp_QF2Z8qFEukAaGc";
+
+var unsplashUrl = "https://api.unsplash.com/search/?client_id=" +
+unsplashKey +
+"&collections&page=1&query=plated_food";
+console.log(unsplashUrl);
+
+fetch(unsplashUrl)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (response) {
+    console.log(response);
+
+    var fetchedPhotos = response.photos.results[0];
+    console.log(fetchedPhotos);
+
+    var photoInput = `<img class="mainImg responsive-img circle hide-on-med-and-down" src="${fetchedPhotos.urls.small}"/>`
+
+    $("#mainPhoto").append(photoInput);
+  });
+  */
+
+ var imgApiKey = "20053445-7c1ada4a51a5744095df38f1d";
+
+
+ //api search syntax for pixabay imgs
+ var imgApiUrl = "https://pixabay.com/api/?q=plated_food" +
+ 
+ "&image_type=photo&key=" +
+ imgApiKey;
+ console.log(imgApiUrl);
+
+ fetch(imgApiUrl) 
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (response) {
+    console.log(response);
+
+    var imgList = [2,3,4,7,8,9,13,14,16,17];
+    
+    // picks random image from imgList on page load/refresh to populate the main page photo 
+    var randImg = imgList[Math.floor(Math.random() * imgList.length)];
+    
+    var fetchedPhotos = response.hits[randImg].webformatURL;
+    console.log(fetchedPhotos);
+
+    // dynammically renders img to page
+    var photoInput = `<img class="mainImg responsive-img circle hide-on-med-and-down" src="${fetchedPhotos}"/>`
+
+    $("#mainPhoto").append(photoInput);
+  });
 
 
 fetchLocation.addEventListener("click", function (event) {
