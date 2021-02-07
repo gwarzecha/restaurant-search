@@ -185,7 +185,7 @@ function cuisineResults(cityId, btnValue) {
         var imgUrl = list[i].restaurant.featured_image.length > 0 ? list[i].restaurant.featured_image : "./assets/imgs/image-card-temp.png"
         //if (list[i].restaurant.featured_image.length > 0) {
           var restaurantCard = //offset-s3 in class
-            `<div class="col s3 card large card-image"> 
+            `<div class="col s12 l3 m3 card large card-image"> 
           <img class="foodImg" src="${imgUrl}"/>
           <span class="card-title">${list[i].restaurant.name}</span>
           <div class="card-content">
