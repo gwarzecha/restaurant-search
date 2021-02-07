@@ -109,6 +109,7 @@ main {
   transition: 0.5s;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  overflow: scroll;
 }
 
 .card-title {
@@ -116,13 +117,13 @@ main {
   margin: 10px;
   padding: 10px;
   display: inline-block;
+  overflow: scroll;
 }
 
 .card-content {
   font-family: 'Fira Sans', sans-serif;
   line-height: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: scroll;
 }
 
 .card:hover {
