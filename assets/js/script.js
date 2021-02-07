@@ -1,13 +1,11 @@
-
-
-// Try and make the code more DRY as it is incredibly redundant. 
-
 //GLOBAL VARIABLES
 var zomatoApiKey = "67e6c9cf18ec88d51590db6c7bb32edc";
 
 var imgApiKey = "20053445-7c1ada4a51a5744095df38f1d";
 
 var fetchLocation = document.querySelector("#submitBtn");
+
+var cityId = ""; // Made  variable global
 
 
 //FUNCTIONS
@@ -50,7 +48,6 @@ fetch(imgApiUrl)
     $("#mainPhoto").append(photoInput);
   });
 
-
 // function to enter city and subsequent cuisine buttons
 fetchLocation.addEventListener("click", function (event) {
   event.preventDefault();
@@ -82,75 +79,109 @@ fetchLocation.addEventListener("click", function (event) {
     .then(function (response) {
       console.log(response);
       // fetches the city id for the first city in the area (which is typically the one searched for)
-      var cityId = response.location_suggestions[0].id;
-      //console.log(cityId);
-
-
-      // icon food-type buttons
-      var buttonM = document.querySelector("#iconBtnM");
-      buttonM.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonM.value);
-      });
-
-      var buttonA = document.querySelector("#iconBtnA");
-      buttonA.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonA.value);
-      });
-
-      var buttonP = document.querySelector("#iconBtnP");
-      buttonP.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonP.value);
-      });
-
-      var buttonC = document.querySelector("#iconBtnC");
-      buttonC.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonC.value);
-      });
-
-      var buttonH = document.querySelector("#iconBtnH");
-      buttonH.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonH.value);
-      });
-
-      var buttonJ = document.querySelector("#iconBtnJ");
-      buttonJ.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonJ.value);
-      });
-
-      var buttonB = document.querySelector("#iconBtnB");
-      buttonB.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonB.value);
-      });
-
-      var buttonS = document.querySelector("#iconBtnS");
-      buttonS.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonS.value);
-      });
-
-      var buttonF = document.querySelector("#iconBtnF");
-      buttonF.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonF.value);
-      });
-
-      var buttonD = document.querySelector("#iconBtnD");
-      buttonD.addEventListener("click", function (event) {
-        event.preventDefault();
-        cuisineResults(cityId, buttonD.value);
-      });
-
+      cityId = response.location_suggestions[0].id;
     })
-
 });
 
+var buttonM = document.querySelector("#iconBtnM");
+buttonM.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+    cuisineResults(cityId, buttonM.value);
+  }
+});
+
+var buttonA = document.querySelector("#iconBtnA");
+buttonA.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+    cuisineResults(cityId, buttonA.value);
+  }
+});
+
+var buttonP = document.querySelector("#iconBtnP");
+buttonP.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonP.value);
+  }
+});
+
+var buttonC = document.querySelector("#iconBtnC");
+buttonC.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonC.value);
+  }
+});
+
+var buttonH = document.querySelector("#iconBtnH");
+buttonH.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonH.value);
+  }
+});
+
+var buttonJ = document.querySelector("#iconBtnJ");
+buttonJ.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonJ.value);
+  }
+});
+
+var buttonB = document.querySelector("#iconBtnB");
+buttonB.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonB.value);
+  }
+});
+
+var buttonS = document.querySelector("#iconBtnS");
+buttonS.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonS.value);
+  }
+});
+
+var buttonF = document.querySelector("#iconBtnF");
+buttonF.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonF.value);
+  }
+});
+
+var buttonD = document.querySelector("#iconBtnD");
+buttonD.addEventListener("click", function (event) {
+  event.preventDefault();
+  if(cityId==""){
+    alert("Please enter a city name!")
+  } else {
+  cuisineResults(cityId, buttonD.value);
+  }
+});
 
 function cuisineResults(cityId, btnValue) {
 
@@ -202,19 +233,3 @@ function cuisineResults(cityId, btnValue) {
       }
     })
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
