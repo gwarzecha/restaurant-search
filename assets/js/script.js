@@ -9,14 +9,17 @@ var cityId = ""; // Made  variable global
 
 
 //FUNCTIONS
-/*
-window.onload = function() {
-  recentSearch = localStorage.getItem("city");
-  console.log(recentSearch);
 
-  getMeFood(recentSearch);
+window.onload = function() {
+  recentCity = localStorage.getItem("cityCode");
+  console.log(recentCity);
+  recentCuisine = localStorage.getItem("cuisineVal");
+  console.log(recentCuisine);
+
+
+  cuisineResults(recentCity, recentCuisine);
 };
-*/
+
 
 
 
@@ -60,7 +63,6 @@ fetchLocation.addEventListener("click", function (event) {
   //console.log(cityName);
 
   
-  localStorage.setItem("city", cityName);
 
   // fetch call to retrieve city data from zomato 
   var myHeaders = new Headers();
@@ -80,6 +82,8 @@ fetchLocation.addEventListener("click", function (event) {
       console.log(response);
       // fetches the city id for the first city in the area (which is typically the one searched for)
       cityId = response.location_suggestions[0].id;
+
+      localStorage.setItem("cityCode", cityId);
     })
 });
 
@@ -207,6 +211,8 @@ function cuisineResults(cityId, btnValue) {
     })
     .then(function (response) {
       console.log(response);
+
+      localStorage.setItem("cuisineVal", btnValue);
 
       var list = response.restaurants;
       //console.log(list);
