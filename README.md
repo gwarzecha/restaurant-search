@@ -8,7 +8,7 @@ SO THAT I CAN make a quick decision on my next meal.
 
 The restaurant and city data was generated using the Zomato API. Whenever the use refreshes the screen or loads the app in their browser for the first time, a random image is retrieved using Pixabay API to give the user suggestions regarding what they may be in the mood for or simply provide an enhanced aesthetic experience for the user. 
 
-Deployed application: [LINK]
+Deployed application: https://gwarzecha.github.io/restaurant-search/
 
 ### APIs Used
 
