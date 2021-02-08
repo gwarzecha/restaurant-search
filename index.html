@@ -68,42 +68,42 @@
           <div class="searchField">
             <label class="inputCity" for="citySearch">Enter Your City</label>
             <input id="searchInput" type="text" name="citySearch" />
-            
+
             <button type="submit" class="btn waves-effect waves-light red accent-4" id="submitBtn">Submit</button>
           </div>
 
         </div>
-        <div class="col l6">
-          <img src="./assets/imgs/burger.jpg" id="mainImg" class="responsive-img circle hide-on-med-and-down" />
+        <div class="col l6" id="mainPhoto">
+
         </div>
       </div>
 
       <!-- box 2 -->
       <div class="row" id="content2">
         <div class="divider"></div>
-        <div class="col s10">
+        <div class="col l10 m10 s4">
           <h2 class="contHead">Tell Us What Looks Good</h2>
           <div class="row">
             <!-- will end up being clickable buttons-->
-            <button class="waves-effect waves-light iconBtn" id="iconBtnM"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnM" value="73" title="Mexican"><img
                 src="./assets/imgs/mexican1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnA"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnA" value="1" title="American"><img
                 src="./assets/imgs/burger1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnP"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnP" value="55" title="Italian"><img
                 src="./assets/imgs/pizza1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnC"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnC" value="161" title="Breakfast"><img
                 src="./assets/imgs/coffee1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnH"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnH" value="143" title="Healthy"><img
                 src="./assets/imgs/healthy1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnJ"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnJ" value="3" title="Asian"><img
                 src="./assets/imgs/japanese1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnB"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnB" value="227" title="Bar Food"><img
                 src="./assets/imgs/beer1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnCake"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnS" value="100" title="Desserts"><img
                 src="./assets/imgs/desserts1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnF"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnF" value="40" title="Fast Food"><img
                 src="./assets/imgs/fries1.png" width="150" height="150" /></button>
-            <button class="waves-effect waves-light iconBtn" id="iconBtnD"><img
+            <button class="waves-effect waves-light iconBtn" id="iconBtnD" value="411" title="Dim Sum"><img
                 src="./assets/imgs/dumplings1.png" width="150" height="150" /></button>
           </div>
         </div>
@@ -115,7 +115,7 @@
         <h2 class="contHead">We Found You Something To Eat</h2>
         <!-- replace with dynamically created restuarant info-->
         <div class="row" id="restaurantContainer">
-          
+
         </div>
       </div>
     </div>
@@ -123,33 +123,25 @@
 
   <footer class="page-footer grey lighten-2" id="contact">
 
-    <div class="footer-copyright grey lighten-2">
-      <div class="container" style="color: #bc1823">
-        © 2021 The Quick Bite
+       <div class="footer" style="color: #bc1823">
+        <div class="footer-text">
+          <p class="copyright-info">© 2021 The Quick Bite </p>
+          <p><i class="material-icons tiny">power</i> Powered by Zomato and Pixabay.</p> 
+          <i class="material-icons">phone</i>
+          <span>520 555 5555</span>
+        </div>
       </div>
-    </div>
+   
 
+    </footer>
 
-    <!--<div class="right">
-      
-      <i class="material-icons">phone</i>
-      <span>555 555 5555</span>
-      
-    </div>  
-    -->
-
-  </footer>
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <!-- js script file -->
-  <script src="./assets/js/script.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <!-- js script file -->
+    <script src="./assets/js/script.js"></script>
 
 </body>
-
-
-
 
 </html>

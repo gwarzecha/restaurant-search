@@ -109,6 +109,7 @@ main {
   transition: 0.5s;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  overflow: scroll;
 }
 
 .card-title {
@@ -121,8 +122,7 @@ main {
 .card-content {
   font-family: 'Fira Sans', sans-serif;
   line-height: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: scroll;
 }
 
 .card:hover {
@@ -133,3 +133,13 @@ main {
   margin: 5px 0 25px 15px;
 }
 */
+
+.page-footer {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 5px;
+}
+
+.copyright-info {
+  font-weight: bold;
+}
