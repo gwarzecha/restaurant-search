@@ -46,7 +46,7 @@ fetch(imgApiUrl)
     console.log(fetchedPhotos);
 
     // dynammically renders img to page
-    var photoInput = `<img class="mainImg responsive-img circle hide-on-med-and-down" src="${fetchedPhotos}"/>`
+    var photoInput = `<img class="mainImg responsive-img circle hide-on-med-and-down" src="${fetchedPhotos}" alt="plated food"/>`
 
     $("#mainPhoto").append(photoInput);
   });
@@ -223,9 +223,10 @@ function cuisineResults(cityId, btnValue) {
         //if (list[i].restaurant.featured_image.length > 0) {
           var restaurantCard = //offset-s3 in class
             `<div class="col s12 l3 m3 card large card-image"> 
-          <img class="foodImg" src="${imgUrl}"/>
+          <img class="foodImg" src="${imgUrl}" alt="restaurant photo"/>
           <span class="card-title">${list[i].restaurant.name}</span>
           <div class="card-content">
+            <a href="${list[i].restaurant.menu_url}" target="_blank">View Menu</a>
             <p class="address">${list[i].restaurant.location.address}</p>
             <hr>
             <p class="hours">${list[i].restaurant.timings}</p>
